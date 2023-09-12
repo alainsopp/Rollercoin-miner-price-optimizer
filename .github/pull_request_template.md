@@ -14,3 +14,7 @@ _Add more cotent to describe the change_
 
 - [ ] Tested changes
 - [ ] Stakeholder Approval
+
+### Issue solved
+
+_Issue number_
