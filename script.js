@@ -221,14 +221,15 @@ I;RollerMiner R4;6000
 II;Uncommon Mergedge Mk. I;12810
 I;Drifter;24000
 III;Rare Mergedge Mk. I;33705`.split('\n');
-    getbestRatioMiner(minerList);
+    miners = getBestRatioMiners(minerList);
+    console.log(miners);
 }
 
-function getbestRatioMiner(minerList) {
+function getBestRatioMiners(minerList) {
     let names = [];
     let unlistedMiners = [];
-    let prices = [];
-    let bestRatioMiner = { 'Name' : '', 'Power' : 0, 'Price' : 0, 'Ratio' : 0 };
+    let prices = [];    
+    let miners = [];
     let minerNames = document.getElementsByClassName('item-title');
     for (let i = 0; i < minerNames.length - 1; i++) {
         names.push(minerNames[i].textContent)
@@ -239,22 +240,24 @@ function getbestRatioMiner(minerList) {
     }
     if (names.length == prices.length) {
         for (let i = 0; i < names.length - 1; i++) {
-            miner = minerList.filter(e => e.split(';')[1] == names[i]);
-            if (miner.length != 0) {
-                let splited = miner[0].split(';');                
-                let ratio = (parseInt(splited[2]) / 1000) / parseFloat(prices[i]);                
-                if (bestRatioMiner.Ratio < ratio) {
-                    bestRatioMiner.Name = splited[1];
-                    bestRatioMiner.Power = splited[2];
-                    bestRatioMiner.Price = prices[i];
-                    bestRatioMiner.Ratio = ratio
-                }
+            mnr = minerList.filter(e => e.split(';')[1] == names[i]);
+            if (mnr.length != 0) {
+                let splited = mnr[0].split(';');                
+                let ratio = (parseInt(splited[2]) / 1000) / parseFloat(prices[i]);
+                let miner = { 'Name' : '', 'Power' : 0, 'Price' : 0, 'Ratio' : 0 };
+                miner.Name  = splited[1];
+                miner.Power = splited[2];
+                miner.Price = prices[i];
+                miner.Ratio = ratio;
+                miners.push(miner);                          
             } else {
                 unlistedMiners.push(names[i])
             }
         }
     }
-    console.log(bestRatioMiner);
+    else {
+        console.log('Error: Something wen wrong during parsing. Names count and prices count are differents.')
+    }
     if (unlistedMiners.length == 0) {
         console.log("[ All miners on a page were analyzed.]")
     }
@@ -262,6 +265,16 @@ function getbestRatioMiner(minerList) {
         console.log("Unlisted Miners: ")
         console.log(unlistedMiners)
     }
+    return sortMinerByRatio(miners, "desc")
 }
 
+function sortMinerByRatio(miners, order) {
+    let sorted = miners;
+    if (order == "asc") {
+        sorted.sort((a, b) => a.Ratio - b.Ratio);
+    } else if (order == "desc") {
+        sorted.sort((a, b) => b.Ratio - a.Ratio);
+    }
+    return sorted;
+}
 main();

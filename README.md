@@ -15,6 +15,7 @@ Each miner has several characteristics:
 When inside the marketplace, some characteristics about the miners (name, price, available amount, etc.) are displayed.  
 However, it is not possible to see the **Power** provided by the miner when on this page.  
 This is not very practical and players are forced to click on a miner to see the power it provides.  
+
 This project helps to select the miner that has the best **Power/Cost ratio**  
 without clicking on each miner displayed on the page to compare their characteristics.
 
@@ -23,24 +24,23 @@ without clicking on each miner displayed on the page to compare their characteri
 1. **Copy** the code from the **script.js** file.
 1. **Open** your favorite internet browser. This project was tested on **Edge** and **Firefox**.
 1. Log yourself into rollercoin.com and go to the marketplace.
-1. (Optional) Use the filters feature on the right side of the page. It allow the script to be more efficient.
+1. (Optional) Use the filters feature on the right side of the page. It allows the script to be more efficient.
 1. Press the **F12** key (It will open the developer tool of the browser).
 1. Search for the **Console** tab.
 1. Paste the clipboard content into the console.
-1. Press **Enter** and voila.
-
-## Demo
+1. Press **Enter** and voila.  
 
 ![image info](./edited_1.png)
 
-### Results
+#### Results 
 
 ![image info](./edited_2.png)
 
-The list of miners available in the game is not comprehensive yet.
-By consequence, data about some miners are not available and thus can not be processed.  
+The **Ratio** property represents how much **RLT** does a **Th/s** costs.  
 
-For that reason, there is a message at the end of the execution detailing the miners that has not been processed.  
+For instance, if we chose the miner **CP-106** at **0.2835 RLT** and with a power of **11 106 Gh/s**,  
+the associated ratio is **39.174**...  
+This ratio means that for **1 RLT** spent, you got approximately **39.17 Th/s** of mining power.
 
 ## Find a bug or want to improve?
 
@@ -50,9 +50,12 @@ If you would like to submit PR with a fix, reference the issue you created.
 
 ## Known issues (Work in progress)
 
-This project is still ongoing, especially the part with completing the list of all miners available in the game.
+The list of miners available in the game used by this project is not comprehensive yet.
+By consequence, data about some miners are not available and thus can not be processed.  
 
-## Referal program
+For that reason, there is a message at the end of the execution detailing the miners that have not been processed.  
 
-If you want to join rollercoin.com, here is my referal link **https://rollercoin.com/?r=lfpqio8r**.  
+## Referral program
+
+If you want to join rollercoin.com, here is my referral link **https://rollercoin.com/?r=lfpqio8r**.  
 By signing up with this link, you will receive 1000 free Satoshis.
