@@ -184,6 +184,8 @@ I;JBS-200;13000
 I;The Thrill Rider;13000
 II;Uncommon Mergedge;10000
 I;Scarabey;8000
+II;Scarabey;21000 
+III;Scarabey;55125
 I;RollerMiner S5+;4000
 I;Mergedge;3825
 I;RollerArc SX;3000
@@ -212,6 +214,7 @@ II;Uncommon RollerMiner R4;15750
 II;Rare RollerMiner S4;8085
 II;Rare RollerMiner S7;9135
 IV;Epic RollerArc S1;3045
+V;Legendary RollerArc S1;8085
 I;Mergedge Mk. I;4860
 I;RollerMiner G1;3500
 II;Uncommon RollerMiner S4;3045
@@ -220,6 +223,55 @@ II;Uncommon RollerMiner S7;3465
 I;RollerMiner R4;6000
 II;Uncommon Mergedge Mk. I;12810
 I;Drifter;24000
+I;Sparkling Light;10000
+I;Paradise Pier;20020
+II;Paradise Pier;52605
+III;Paradise Pier;138180
+I;TAPEBOY;12200
+II;TAPEBOY;32025
+I;Gas Town Bitminer;48000
+II;Gas Town Bitminer;126000
+III;Gas Town Bitminer;330750
+I;Dawn-To-Dusk;64800 
+II;Dawn-To-Dusk;170100
+III;Dawn-To-Dusk;446565
+I;Inclusion Miner;71400
+II;Inclusion Miner;187425
+III;Inclusion Miner;492030
+I;XLZ-01;22000
+II;XLZ-01;57750
+III;XLZ-01;151620
+I;Chaise Longue;25000 
+II;Chaise Longue;65625 
+III;Chaise Longue;172305
+I;Your Friend Turing;42000
+I;Target Flooff;56000 
+II;Target Flooff;147000 
+III;Target Flooff;385875
+I;Country Loading...;50500
+I;Katsuhito;10
+I;TurtleCoin;20000
+II;Uncommon RollerMiner S5+;10500
+I;Elven Magic;22800
+I;The Protector;36000
+I;The Savantron;27000
+I;Star Symbol;100
+I;Fang Symbol;100
+I;Whatta Duck;10
+I;Smelt Smith;21000
+I;Vegvisir;24000
+I;Missionaries;40000
+II;Uncommon Leap, The Frogo;105
+III;Rare RollerMiner G1;24255
+I;Mission Control 321;33000
+I;Nuclearburg;35200
+I;Bit by Beat;32400
+I;Jungle King;16800
+I;Snowster-9001;35400
+I;Sweets Stealer;23200
+I;Gingerbread House;22000
+I;ToxiFilter 99;16000
+II;Uncommon Doggie-Woogie;105
 III;Rare Mergedge Mk. I;33705`.split('\n');
     miners = getBestRatioMiners(minerList);
     console.log(miners);
