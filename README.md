@@ -12,12 +12,8 @@ Each miner has several characteristics:
 * Bonus Power
 * etc.
 
-When inside the marketplace, some characteristics about the miners (name, price, available amount, etc.) are displayed.  
-However, it is not possible to see the **Power** provided by the miner when on this page.  
-This is not very practical and players are forced to click on a miner to see the power it provides.  
-
-This project helps to select the miner that has the best **Power/Cost ratio**  
-without clicking on each miner displayed on the page to compare their characteristics.  
+When inside the marketplace, some characteristics about the miners (name, price, power, bonus power, available amount) are displayed.  
+This project helps to select the miner that has the best **Power/Cost ratio**   
 It does not require any installation and is executed inside the browser console.  
 
 ## How to use it
