@@ -45,17 +45,16 @@ Each row represents a miner.
 The console displays **4 properties** for each miner:
 
 * **Name**: The miner name.
-* **Power**: The miner hash power in **Gh/s**. 
-  The power is converted to **Ph/s** for calculation and readability purposes.  
-  *Quick reminder :* **1000 Gh/s** is equivalent to **1 Th/s**.
+* **Power**: The miner hash power in **Gh/s**.
 * **Price**: The miner price in **RLT**.
-* **Ratio**: The miner hash power in **Th/s** divided by the miner **cost**.
+* **Ratio**: The miner hash power in **Th/s** divided by the miner **cost** (Th/s/Rlt).
 
 The **Ratio** property represents how much **RLT** does **1 Th/s** cost.  
 
 For instance, if we look at the **JBS-200** at **0.45045 RLT** and with a hash power of **13 000 Gh/s**,  
-the associated ratio is **28.8602**...  
+the associated ratio is aroun **28.8602**.  
 This ratio means that for **1 RLT** spent, we got approximately **28.86 Th/s** of mining power.  
+The ratio is expressed in **Th/s per RLT** for readability purpose.
 
 ## Find a bug or want to improve?
 
