@@ -13,7 +13,8 @@ Each miner has several characteristics:
 * etc.
 
 When inside the marketplace, some characteristics about the miners (name, price, power, bonus power, available amount) are displayed.  
-This project helps to select the miner that has the best **Power/Cost ratio**   
+This project helps to select the miner that has the best **Power/Cost ratio**.  
+
 It does not require any installation and is executed inside the browser console.  
 
 ## How to use it
@@ -47,14 +48,12 @@ The console displays **4 properties** for each miner:
 * **Name**: The miner name.
 * **Power**: The miner hash power in **Gh/s**.
 * **Price**: The miner price in **RLT**.
-* **Ratio**: The miner hash power in **Th/s** divided by the miner **cost** (Th/s/Rlt).
-
+* **Ratio**: The miner hash power in **Th/s** (for readability purpose) divided by the miner **cost** (Th/s/Rlt).  
+  
 The **Ratio** property represents how much **RLT** does **1 Th/s** cost.  
-
 For instance, if we look at the **JBS-200** at **0.45045 RLT** and with a hash power of **13 000 Gh/s**,  
-the associated ratio is aroun **28.8602**.  
+the associated ratio is around **28.8602**.  
 This ratio means that for **1 RLT** spent, we got approximately **28.86 Th/s** of mining power.  
-The ratio is expressed in **Th/s per RLT** for readability purpose.
 
 ## Find a bug or want to improve?
 
