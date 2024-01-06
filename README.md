@@ -55,6 +55,12 @@ For instance, if we look at the **JBS-200** at **0.45045 RLT** and with a hash p
 the associated ratio is around **28.8602**.  
 This ratio means that for **1 RLT** spent, we got approximately **28.86 Th/s** of mining power.  
 
+## Disclaimer
+
+As it is stated in the web site terms of use, it is prohibited to use any automated scripts,  
+bots, or other software to interact with the RollerCoin website.  
+https://rollercoin.com/terms
+
 ## Find a bug or want to improve?
 
 If you found an issue or would like to submit an improvement to this project,   
