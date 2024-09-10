@@ -67,13 +67,6 @@ If you found an issue or would like to submit an improvement to this project,
 please submit an issue using the issue tab above.  
 If you would like to submit PR with a fix, reference the issue you created.  
 
-## Known issues (Work in progress)
-
-The list of miners available in the game used by this project is not comprehensive yet.  
-By consequence, data about some miners are not available and thus can not be processed.  
-
-For that reason, there is a message at the end of the execution detailing the miners that have not been processed.  
-
 ## Referral program
 
 If you want to join rollercoin.com, here is my referral link **https://rollercoin.com/?r=lfpqio8r**.  
